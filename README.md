@@ -1,2 +1,2 @@
 # land-of-lisp
-Study repos, implementations of games from book "Land of lisp" (maybe more games), using various languages
+Study repository - implementations of games from book "Land of lisp" (maybe more other little games), using various languages.
