@@ -1,6 +1,6 @@
 (ns guess.core)
+(defparameter *small* 1)
+(defparameter *big* 100)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn guess-my-number []
+  (/ (+ *small* *big*) 2))
