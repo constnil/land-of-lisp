@@ -14,27 +14,17 @@
 (defvar *big* 100)
 
 (defun guess-my-number ()
-  "Start a guess."
-  (interactive)
-  (let ((guess (ash (+ *small* *big*) -1)))
-    (message "%d?" guess)
-    guess))
+  (ash (+ *small* *big*) -1))
 
 (defun smaller ()
-  "Inform the guess is smaller and start next guess."
-  (interactive)
   (setf *big* (1- (guess-my-number)))
   (guess-my-number))
 
 (defun bigger ()
-  "Inform the guess is bigger and start next guess."
-  (interactive)
   (setf *small* (1+ (guess-my-number)))
   (guess-my-number))
 
 (defun start-over ()
-  "Restart guess game and start a guess."
-  (interactive)
   (setf *small* 1)
   (setf *big* 100)
   (guess-my-number))
