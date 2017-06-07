@@ -1,0 +1,13 @@
+(package "lol"
+         "0.1.0"
+         "Emacs lisp implementation of games from book 'Land of Lisp'")
+(files "*.el")
+
+(source gnu)
+(source melpa)
+
+(development
+ (depends-on "f")
+ (depends-on "ecukes")
+ (depends-on "ert-runner")
+ (depends-on "el-mock"))

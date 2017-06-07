@@ -1,6 +1,4 @@
-;;; guess.el --- "Guess" game from "Land of Lisp" by Conrad Barski, M.D.
-
-;; Copyright (C) 2015, Wu Tiefeng.
+;;; guess.el --- The "Guess" game.
 
 ;; Author: Wu Tiefeng <IcebergWTF@qq.com>
 ;; Maintainer: Wu Tiefeng
