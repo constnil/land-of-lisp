@@ -1,4 +1,4 @@
-(ns guess.core)
+(ns lol.guess)
 
 (def ^:dynamic *small* (ref 1))
 (def ^:dynamic *big* (ref 100))

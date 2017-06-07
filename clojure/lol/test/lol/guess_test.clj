@@ -1,6 +1,6 @@
-(ns guess.core-test
+(ns lol.guess-test
   (:require [clojure.test :refer :all]
-            [guess.core :refer :all]))
+            [lol.guess :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
