@@ -1,6 +1,6 @@
 ;;; guess.el --- The "Guess" game.
 
-;; Author: Wu Tiefeng <IcebergWTF@qq.com>
+;; Author: Wu Tiefeng <icebergwtf@qq.com>
 ;; Maintainer: Wu Tiefeng
 ;; Keywords: games
 
@@ -15,17 +15,20 @@
   (ash (+ *small* *big*) -1))
 
 (defun smaller ()
-  (setf *big* (1- (guess-my-number)))
-  (guess-my-number))
+  (interactive)
+  (setq *big* (1- (guess-my-number)))
+  (message "%d" (guess-my-number)))
 
 (defun bigger ()
-  (setf *small* (1+ (guess-my-number)))
-  (guess-my-number))
+  (interactive)
+  (setq *small* (1+ (guess-my-number)))
+  (message "%d" (guess-my-number)))
 
 (defun start-over ()
-  (setf *small* 1)
-  (setf *big* 100)
-  (guess-my-number))
+  (interactive)
+  (setq *small* 1)
+  (setq *big* 100)
+  (message "%d" (guess-my-number)))
 
 (provide 'guess)
 

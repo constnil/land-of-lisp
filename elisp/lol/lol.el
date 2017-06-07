@@ -1,6 +1,6 @@
 ;;; lol.el --- Land of Lisp games in emacs lisp.
 
-;; Author: Wu Tiefeng <IcebergWTF@qq.com>
+;; Author: Wu Tiefeng <icebergwtf@qq.com>
 ;; Maintainer: Wu Tiefeng
 ;; Keywords: games
 
@@ -8,9 +8,9 @@
 
 ;;; Code:
 
-(add-to-list 'load-path (expand-file-name "lisp/"))
-
-(require 'guess)
+(when (fboundp 'normal-top-level-add-to-load-path)
+  (normal-top-level-add-to-load-path "lisp")
+  (require 'guess))
 
 (provide 'lol)
 
