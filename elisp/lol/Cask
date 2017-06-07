@@ -1,7 +1,9 @@
 (package "lol"
          "0.1.0"
          "Emacs lisp implementation of games from book 'Land of Lisp'")
-(files "*.el")
+
+(files "*.el"
+       ("lisp" "lisp/*.el"))
 
 (source gnu)
 (source melpa)
