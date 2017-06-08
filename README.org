@@ -1,7 +1,3 @@
-#+TITLE: Land of Lisp
-#+STARTUP: content
-#+OPTIONS: toc:4 h:4
-
 * Land of Lisp
 /(various language implementations of games from book "Land of lisp")/
 - by Conrad Barski, M.D.
