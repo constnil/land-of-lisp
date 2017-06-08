@@ -1,11 +1,11 @@
-#+TITLE: emacs-mine - An emacs study kit
+#+TITLE: Land of Lisp
 #+STARTUP: content
 #+OPTIONS: toc:4 h:4
 
 * Land of Lisp
 /(various language implementations of games from book "Land of lisp")/
 - by Conrad Barski, M.D.
-** game list and related chapters
+** Game list and related chapters
 *** guess
 - Chapter 2 "Creating Your First Lisp Program"
 *** wizard
