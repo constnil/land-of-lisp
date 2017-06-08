@@ -8,9 +8,7 @@
 
 ;;; Code:
 
-(when (fboundp 'normal-top-level-add-to-load-path)
-  (normal-top-level-add-to-load-path "lisp")
-  (require 'guess))
+(require 'lol-guess "lisp/guess.el")
 
 (provide 'lol)
 

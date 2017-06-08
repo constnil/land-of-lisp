@@ -8,28 +8,28 @@
 
 ;;; Code:
 
-(defvar *small* 1)
-(defvar *big* 100)
+(defvar lol-guess/small 1)
+(defvar lol-guess/big 100)
 
-(defun guess-my-number ()
-  (ash (+ *small* *big*) -1))
+(defun lol-guess--guess-my-number ()
+  (ash (+ lol-guess/small lol-guess/big) -1))
 
-(defun smaller ()
+(defun lol-guess/smaller ()
   (interactive)
-  (setq *big* (1- (guess-my-number)))
-  (message "%d" (guess-my-number)))
+  (setq lol-guess/big (1- (lol-guess--guess-my-number)))
+  (message "%d" (lol-guess--guess-my-number)))
 
-(defun bigger ()
+(defun lol-guess/bigger ()
   (interactive)
-  (setq *small* (1+ (guess-my-number)))
-  (message "%d" (guess-my-number)))
+  (setq lol-guess/small (1+ (lol-guess--guess-my-number)))
+  (message "%d" (lol-guess--guess-my-number)))
 
-(defun start-over ()
+(defun lol-guess-start-over ()
   (interactive)
-  (setq *small* 1)
-  (setq *big* 100)
-  (message "%d" (guess-my-number)))
+  (setq lol-guess/small 1)
+  (setq lol-guess/big 100)
+  (message "%d" (lol-guess--guess-my-number)))
 
-(provide 'guess)
+(provide 'lol-guess)
 
 ;;; guess.el ends here
