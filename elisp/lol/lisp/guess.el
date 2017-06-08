@@ -14,12 +14,12 @@
 (defun lol-guess--guess-my-number ()
   (ash (+ lol-guess/small lol-guess/big) -1))
 
-(defun lol-guess/smaller ()
+(defun lol-guess-smaller ()
   (interactive)
   (setq lol-guess/big (1- (lol-guess--guess-my-number)))
   (message "%d" (lol-guess--guess-my-number)))
 
-(defun lol-guess/bigger ()
+(defun lol-guess-bigger ()
   (interactive)
   (setq lol-guess/small (1+ (lol-guess--guess-my-number)))
   (message "%d" (lol-guess--guess-my-number)))
