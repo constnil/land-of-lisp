@@ -1,6 +1,3 @@
-$small = 1
-$big = 100
-
 def guess_my_number()
   ($big + $small) >> 1
 end
