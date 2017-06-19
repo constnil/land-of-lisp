@@ -7,7 +7,7 @@ namespace lol
         static void Main(string[] args)
         {
             var guess = new Guess();
-            guess.GuessMyNumber();
+            Console.WriteLine(guess.GuessMyNumber());
         }
     }
 }
