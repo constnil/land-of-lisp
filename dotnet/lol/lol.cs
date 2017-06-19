@@ -1,12 +1,13 @@
 ﻿using System;
+using LOL.Guess;
 
-namespace lol
+namespace LOL
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var guess = new Guess();
+            var guess = new GuessGame();
             Console.WriteLine(guess.GuessMyNumber());
         }
     }
