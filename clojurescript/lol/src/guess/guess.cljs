@@ -1,23 +1,31 @@
-(ns lol.guess)
+(ns lol.guess
+  (:require [cljs.nodejs :as node]))
 
-(def ^:dynamic *small* (ref 1))
-(def ^:dynamic *big* (ref 100))
+;; (defonce conn
+;;   (repl/connect "http://localhost:9000/repl"))
 
-(defn- setf [x val]
-  (dosync (ref-set x val)))
+(def *small* 1)
+(def *big* 100)
 
 (defn guess-my-number []
-  (bit-shift-right (+ @*small* @*big*) 1))
+  (bit-shift-right (+ *small* *big*) 1))
 
 (defn smaller []
-  (setf *big* (dec (guess-my-number)))
+  (set! *big* (dec (guess-my-number)))
   (guess-my-number))
 
 (defn bigger []
-  (setf *small* (inc (guess-my-number)))
+  (set! *small* (inc (guess-my-number)))
   (guess-my-number))
 
 (defn start-over []
-  (setf *small* 1)
-  (setf *big* 100)
+  (set! *small* 1)
+  (set! *big* 100)
   (guess-my-number))
+
+(defn -main [& args]
+  (println (start-over))
+  (println "Hello world!"))
+
+(node/enable-util-print!)
+(set! *main-cli-fn* -main)
